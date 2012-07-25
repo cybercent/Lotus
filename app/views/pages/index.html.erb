@@ -1,0 +1,13 @@
+<h1>Page Fetcher</h1>
+<%= simple_form_for @page do |f| %>
+  <%= f.input :fb_page_id, :hint => '(example: 188091757763)', :wrapper_html => { :class => 'search' }, :label => false %>
+  <%= f.button :submit, 'Add' %>
+<% end %>
+
+<ul class="pages">
+<% @pages.each do |page| %>
+  <li>
+	<%= link_to image_tag(page.picture, :size => "48x48") + page.name, page_path(page) %>
+  </li>
+<% end %>
+</ul>

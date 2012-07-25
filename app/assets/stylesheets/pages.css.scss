@@ -1,0 +1,68 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+html, body {
+ background: #E7EAED;
+ font-family: Helvetica,Arial,sans-serif;
+}
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+h1 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 100px 0 30px 0;
+  img {
+	vertical-align: middle;
+  }
+}
+h2 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+#new_page {
+  text-align: center;
+}
+.search {
+  text-align: center;
+  .hint {
+    display: block;
+    font-size: 12px;
+    color: #AAA;
+    margin: 10px 0;
+  }
+  input {
+	width: 400px;
+	font-size: 18px;
+  }
+}
+.pages {
+  width: 400px;
+  margin: 50px auto;
+  li {
+    a img {
+      vertical-align: middle;
+      margin-right: 15px;
+    }
+  margin-bottom: 10px;
+  }
+}
+.feed {
+  margin-bottom: 30px;
+  p {
+	float: left;
+	margin-bottom: 5px;
+	width: 100%;
+	img { 
+	  float: left;
+	  margin-right: 10px;
+	}
+  }
+  .time {
+  	color: #AAA;
+    font-size: 12px;
+  }
+}

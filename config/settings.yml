@@ -1,0 +1,11 @@
+defaults: &defaults
+  fb_oauth_key: AAADFZAIL8xY8BALtwEDUeRicDmr1KBJDR8ZBvcf45AsWpnZBrAbyr6bBaaqN5DZAmApMUzgSTvG2yIkFxaJts1piq0iM1vvhMdfR1FwfvwZDZD
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults

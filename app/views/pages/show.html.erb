@@ -1,0 +1,8 @@
+<h1><%= image_tag(@page.picture, :size =>"48x48") %> <%= @page.name %></h1>
+<% @feed[0..9].each do |post| %>
+<div class="feed">
+  <h2><%= post['from']['name'] %></h2>
+  <p><%= image_tag(post['picture']) if post['picture'] %> <%= auto_link(post['message']) %></p>
+  <span class="time"><%= distance_of_time_in_words_to_now(post['updated_time']) %> ago</span>
+</div>
+<% end %>
