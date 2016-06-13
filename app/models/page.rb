@@ -3,7 +3,7 @@ class Page < ActiveRecord::Base
   validates :name, :fb_page_id, :presence => true
 
   def is_new?
-    return false
+    ! false
   end
 
   def badNAme
@@ -11,8 +11,13 @@ class Page < ActiveRecord::Base
   end
 
   def complexity
-    (1..2).each do |i|
+    (1 .. 2).each do |i|
     puts i
     end
+  end
+
+  def bad
+    1 - \
+    2
   end
 end
